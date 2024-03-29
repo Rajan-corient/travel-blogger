@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NewPlace from "./places/pages/NewPlace";
 import Users from "./user/pages/Users";
+import UserPlaces from "./places/pages/UserPlaces";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "places/new",
         element: <NewPlace />,
+      },
+      {
+        path: "/:userId/places",
+        element: <UserPlaces />,
       },
     ],
   },

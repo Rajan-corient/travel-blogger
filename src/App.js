@@ -1,15 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Outlet } from "react-router-dom";
-import Header from "./shared/components/Header";
-import Footer from "./shared/components/Footer";
+import MainNavigation from "./shared/components/navigation/MainNavigation";
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Outlet />
-      <Footer />
+      <MainNavigation />
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }
