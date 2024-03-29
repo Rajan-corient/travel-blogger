@@ -19,18 +19,18 @@ const Users = () => {
       img: profile_2,
       places: 2,
     },
-    // {
-    //   id: 3,
-    //   name: "Aarav",
-    //   img: profile_3,
-    //   places: 6,
-    // },
-    // {
-    //   id: 4,
-    //   name: "Aarav",
-    //   img: profile_4,
-    //   places: 5,
-    // },
+    {
+      id: "u3",
+      name: "Aarav",
+      img: profile_3,
+      places: 6,
+    },
+    {
+      id: "u4",
+      name: "Aarav",
+      img: profile_4,
+      places: 5,
+    },
   ];
 
   return <UsersList items={USERS} />;
